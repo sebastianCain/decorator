@@ -15,9 +15,10 @@ def arg_decorate(f):
         f(*args)
     return get_args
 
-@arg_decorate
 @time_decorate
+@arg_decorate
 def funcy(r, s):
+    print "Printing values:"
     for i in range(r, s):
         i = i ** 4
         print i
